@@ -1,105 +1,281 @@
-# RoadSathi 🚗🛠️
+# 🚗 RoadSathi - Smart Roadside Assistance Platform
 
-RoadSathi is a web-based smart roadside assistance platform designed to help vehicle owners during emergency situations.
+<p align="center">
+  <img src="assets/logo.png" alt="RoadSathi Logo" width="180"/>
+</p>
 
-Project Title
-**RoadSathi – Smart Roadside Assistance Web Application**
+<p align="center">
+  <strong>Connecting vehicle owners with instant roadside assistance anytime, anywhere.</strong>
+</p>
 
-Project Overview
-RoadSathi is a web-based smart roadside assistance application designed to help vehicle owners during emergency situations on the road. The platform allows users to request essential services such as fuel delivery, mechanic assistance, towing services, and vehicle washing through a single, user-friendly interface.
-The main objective of this project is to reduce the response time during roadside emergencies and provide a digital solution that connects users with service providers efficiently. The application focuses on simplicity, accessibility, and a modern user experience.
+---
 
-Frontend Description
-The frontend of RoadSathi is fully implemented using HTML, CSS, JavaScript, and Bootstrap 5. It provides an interactive and responsive user interface that works smoothly across different devices.
-The application starts with a login page, where users enter their email, phone number, and password. Basic form validation is implemented using HTML5 and JavaScript to ensure correct input before proceeding.
-After successful login, users are redirected to the service request page. This page allows users to:
-Enter their name and current location
-Select one roadside service at a time using interactive service cards
-Provide additional details based on the selected service
-Each service card dynamically expands using JavaScript and Bootstrap collapse components to collect relevant information such as fuel type and quantity, problem description, towing destination, or washing preference.
-Custom CSS is used for styling, animations, and visual effects, while JavaScript handles page navigation, form validation, and service selection logic without reloading the page.
+## 📖 Project Overview
 
-Backend Description (Conceptual and Practical Approach)
-The backend of RoadSathi is designed conceptually to make the project complete and scalable. Although the current implementation focuses mainly on the frontend, the backend architecture is clearly defined and can be integrated easily.
-The backend is proposed using Node.js with Express.js, which handles server-side logic and communication between the frontend and database.
-Backend Responsibilities
+RoadSathi is a smart roadside assistance platform that helps vehicle owners quickly connect with nearby service providers during emergencies. The platform enables users to request services such as towing, fuel delivery, mechanic assistance, tyre repair, battery jump-start, and vehicle washing through an intuitive web interface.
 
-The backend is responsible for:
-User authentication and login validation
-Receiving service request data from the frontend
-Storing user and service information in the database
-Managing service request status
-Sending responses back to the frontend
-Backend Working Flow
-The user submits login details from the frontend
+The goal of RoadSathi is to reduce waiting time during roadside emergencies while providing a secure, transparent, and user-friendly experience.
 
-Frontend sends data to backend using REST APIs
+---
 
-Backend validates the user credentials
+## ✨ Features
 
-User selects a roadside service and submits the request
+- 🔐 Secure User Authentication (JWT)
+- 📍 Live Location Detection using Geolocation API
+- 🚗 Roadside Assistance Request System
+- 🛠 Mechanic Service Booking
+- ⛽ Fuel Delivery Request
+- 🚛 Vehicle Towing Service
+- 🔋 Battery Jump-Start Assistance
+- 🛞 Flat Tyre Assistance
+- 🚘 Vehicle Washing Service
+- 📦 Service Request Tracking
+- 🌙 Dark Mode
+- ⭐ Customer Feedback & Rating System
+- 📱 Fully Responsive UI
+- 📊 Admin Dashboard
+- 🔍 Service History
+- 📞 Emergency Contact Support
 
-Backend receives the service request data
+---
 
-Data is stored in the database
+## 🛠 Tech Stack
 
-Backend updates service request status
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
 
-Response is sent back to the frontend
+### Backend
+- Node.js
+- Express.js
 
-Backend Technologies Used
+### Database
+- MongoDB
 
-Node.js – Server-side runtime environment
+### Authentication
+- JWT (JSON Web Token)
 
-Express.js – Backend framework for handling routes and APIs
+### APIs
+- REST API
+- Geolocation API
 
-MongoDB – NoSQL database for storing user and service data
+### Tools
+- Git
+- GitHub
+- VS Code
+- Postman
+- Canva
 
-RESTful APIs – For frontend–backend communication
+---
 
-JWT / Basic Authentication – For secure login (conceptual)
+## 📸 Screenshots
 
-Cloud Server (AWS / Render) – For deployment (conceptual)
+### Home Page
 
-Backend File Structure (Proposed)
+> Add screenshot here
+
+```
+assets/screenshots/home.png
+```
+
+---
+
+### Login Page
+
+> Add screenshot here
+
+```
+assets/screenshots/login.png
+```
+
+---
+
+### Dashboard
+
+> Add screenshot here
+
+```
+assets/screenshots/dashboard.png
+```
+
+---
+
+### Tracking Page
+
+> Add screenshot here
+
+```
+assets/screenshots/tracking.png
+```
+
+---
+
+### Feedback Page
+
+> Add screenshot here
+
+```
+assets/screenshots/feedback.png
+```
+
+---
+
+## 🚀 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/DevKumarofficial/RoadSathi.git
+```
+
+Move into project directory
+
+```bash
+cd RoadSathi
+```
+
+Install backend dependencies
+
+```bash
+npm install
+```
+
+Start the server
+
+```bash
+npm start
+```
+
+Open your browser
+
+```
+http://localhost:3000
+```
+
+---
+
+## 📂 Project Structure
+
+```
 RoadSathi/
 │
-├── index.html        (Frontend UI)
-├── style.css         (Styling)
-├── script.js         (Frontend logic)
+├── assets/
+│   ├── screenshots/
+│   ├── images/
+│   └── logo.png
 │
-├── server.js         (Backend server)
-├── package.json      (Backend configuration)
-
-
-Backend files are saved with the .js extension and run using Node.js.
-
----
-
-## 🚀 Features
-- Fuel delivery request
-- Mechanic assistance
-- Towing service
-- Simple and user-friendly interface
-
----
-
-## 🛠️ Tech Stack
-**Frontend:** HTML, CSS, JavaScript, Bootstrap 5 
-**Backend:** Node.js, Express.js
-**Database:** MongoDB  
-**Authentication:** Firebase Authentication (phone OTP)
-**Payment:** Razorpay
-**Maps:** Google Maps (for location and tracking)
+├── frontend/
+│   ├── css/
+│   ├── js/
+│   ├── pages/
+│   └── index.html
+│
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── config/
+│   ├── server.js
+│   └── package.json
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
 
 ---
 
-## 🌐 Live Links
-**Frontend:** https://github.com/DevKumarofficial/RoadSathi/  
-**Backend:** (will add Render link here)
+## ⚙️ How It Works
+
+1. User signs in securely.
+2. Current location is detected.
+3. User selects the required roadside service.
+4. Service request is sent.
+5. Nearby service provider is assigned.
+6. User tracks request status.
+7. Service is completed.
+8. User provides feedback and rating.
 
 ---
 
-## 👩‍💻 Authors
-Dev Kumar Gupta  
-Vanshika Malani
+## 👥 Team Members
+
+### Dev Kumar Gupta
+- Frontend Development
+- Backend Development
+- Database Design
+- API Integration
+- UI/UX Design
+
+### Vanshika Malani
+- UI Design
+- Research
+- Documentation
+- Testing
+- Presentation
+
+---
+
+## 🔮 Future Enhancements
+
+- 📱 Android Application
+- 🍎 iOS Application
+- 🤖 AI-based Emergency Prediction
+- 🛰 Real-time GPS Tracking
+- 💳 Online Payment Gateway
+- 📞 Video Call with Mechanic
+- 🌐 Multi-language Support
+- 🚨 SOS Emergency Button
+- 📍 Google Maps Navigation
+- 🤝 Service Provider Verification System
+- 📈 Analytics Dashboard
+- 🔔 Push Notifications
+
+---
+
+## 🎯 Project Objectives
+
+- Provide quick roadside assistance.
+- Reduce emergency response time.
+- Improve customer convenience.
+- Digitize roadside service booking.
+- Connect users with verified service providers.
+
+---
+
+## 📌 Repository Status
+
+✅ Active Development
+
+---
+
+## 🤝 Contributions
+
+Contributions, feature requests, and suggestions are welcome.
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 📬 Contact
+
+**Dev Kumar Gupta**
+
+📧 Email: your-email@example.com
+
+🔗 LinkedIn: Your LinkedIn Profile
+
+💻 GitHub: https://github.com/DevKumarofficial
+
+---
+
+⭐ If you like this project, don't forget to star the repository.
